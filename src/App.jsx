@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { WagmiConfig, createConfig, configureChains, mainnet } from "wagmi";
 import { publicProvider } from "wagmi/providers/public";
-import { RainbowKitProvider, ConnectButton, getDefaultConfig } from "@rainbow-me/rainbowkit";
+import { RainbowKitProvider, ConnectButton } from "@rainbow-me/rainbowkit";
 import "@rainbow-me/rainbowkit/styles.css";
 
 const { chains, publicClient } = configureChains([mainnet], [publicProvider()]);
