@@ -6,3 +6,11 @@ body {
 }
 h1 { color: #00ffc6; }
 p { font-size: 16px; }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* بعض التنسيقات الافتراضية */
+html, body, #root { height: 100%; }
+body { @apply bg-slate-900 text-slate-100 font-sans; }
