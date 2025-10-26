@@ -1,16 +1,17 @@
-body {
-  margin: 0;
-  background-color: #0f172a;
-  color: #e6eef8;
-  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
-}
-h1 { color: #00ffc6; }
-p { font-size: 16px; }
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* بعض التنسيقات الافتراضية */
-html, body, #root { height: 100%; }
-body { @apply bg-slate-900 text-slate-100 font-sans; }
+/* ألوان مخصصة لمشروع CARVerPlay */
+:root {
+  --primary-color: #4f46e5; /* أزرق هادئ */
+  --secondary-color: #6b7280; /* رمادي متوسط */
+  --bg-color: #f9fafb; /* خلفية فاتحة */
+  --card-bg: #ffffff; /* خلفية البطاقات */
+  --btn-hover: #4338ca; /* تدرج أزرق داكن */
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: 'Inter', sans-serif;
+}
