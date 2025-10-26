@@ -33,4 +33,25 @@ export default function App() {
       <RainbowKitProvider
         chains={chains}
         theme={darkTheme({
-          accentColor: '#000000', //
+          accentColor: '#000000', // زر أسود
+          accentColorForeground: '#ffffff', // نص أبيض
+          borderRadius: 'medium',
+          overlayBlur: 'small'
+        })}
+      >
+        <div className="min-h-screen flex flex-col justify-center items-center p-4 bg-[#6614b8]">
+          <div className="bg-black/50 backdrop-blur-md shadow-lg rounded-xl p-8 max-w-md w-full flex flex-col items-center">
+            <h1 className="text-3xl font-bold mb-1 text-white">
+              CARVerID
+            </h1>
+            <span className="text-sm text-white mb-6">Demo</span>
+            <p className="mb-6 text-white text-center">
+              Login with your wallet to experience CARVerID system.
+            </p>
+            <ConnectButton showBalance={false} />
+          </div>
+        </div>
+      </RainbowKitProvider>
+    </WagmiConfig>
+  );
+}
