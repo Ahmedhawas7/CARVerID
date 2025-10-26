@@ -10,7 +10,6 @@ import {
 import '@rainbow-me/rainbowkit/styles.css';
 import './index.css';
 
-// إعداد الشبكات والمحافظ
 const { chains, publicClient } = configureChains(
   [mainnet],
   [publicProvider()]
@@ -39,14 +38,14 @@ export default function App() {
           overlayBlur: 'small'
         })}
       >
-        <div className="min-h-screen flex flex-col justify-center items-center p-4 bg-[#6614b8]">
-          <div className="bg-black/50 backdrop-blur-md shadow-lg rounded-xl p-8 max-w-md w-full flex flex-col items-center">
+        <div className="min-h-screen flex justify-center items-center bg-[#6614b8] p-4">
+          <div className="bg-black/70 backdrop-blur-md shadow-lg rounded-xl p-8 max-w-md w-full flex flex-col items-center">
             <h1 className="text-3xl font-bold mb-1 text-white">
               CARVerID
             </h1>
             <span className="text-sm text-white mb-6">Demo</span>
             <p className="mb-6 text-white text-center">
-              Login with your wallet to experience CARVerID system.
+              Connect your wallet to try CARVerID system.
             </p>
             <ConnectButton showBalance={false} />
           </div>
