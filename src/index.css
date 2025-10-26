@@ -2,16 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ألوان مخصصة لمشروع CARVerPlay */
+/* Custom colors for CARVerID DEMO */
 :root {
-  --primary-color: #4f46e5; /* أزرق هادئ */
-  --secondary-color: #6b7280; /* رمادي متوسط */
-  --bg-color: #f9fafb; /* خلفية فاتحة */
-  --card-bg: #ffffff; /* خلفية البطاقات */
-  --btn-hover: #4338ca; /* تدرج أزرق داكن */
+  --primary-color: #7c3aed; /* purple dark background */
+  --card-bg: #d1d5db; /* light gray card */
+  --btn-hover: #5b21b6; /* dark purple for hover */
 }
 
 body {
-  background-color: var(--bg-color);
+  background-color: var(--primary-color);
   font-family: 'Inter', sans-serif;
 }
